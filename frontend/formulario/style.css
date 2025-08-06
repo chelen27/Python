@@ -1,0 +1,98 @@
+body {
+    background-image: url("images/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contenedor {
+    width: 850px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 80px auto;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.capa-uno {
+    width: 50%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-slider {
+    width: 120px;
+    height: 180px;
+    border-radius: 15px;
+    position: absolute;
+    transition: 300ms ease-in-out;
+}
+
+.img-slider1 { transform: rotate(-15deg); left: 20%; }
+.img-slider2 { transform: rotate(5deg); left: 40%; }
+.img-slider3 { transform: rotate(15deg); left: 60%; }
+
+.img-slider:hover {
+    transform: rotate(0deg) scale(1.2);
+    z-index: 2;
+    box-shadow: 5px 5px 15px #00000088;
+}
+
+.capa-form {
+    width: 50%;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2f80ed;
+}
+
+a, p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d06cbb;
+    text-decoration: underline;
+}
